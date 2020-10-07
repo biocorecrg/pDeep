@@ -44,6 +44,14 @@ Check transfer_train.py and run:
 $ python transfer_train.py
 ```
 
+## Container images
+
+       docker build -t pdeep2 .
+
+       sudo singularity build pdeep2.sif docker-daemon://pdeep2:latest
+
+       singularity exec -e pdeep2.sif python predict.py -e 0.3 -i Lumos -in peptide.txt -out predict.txt
+
 ## Cite us
 ```
 Wen-Feng Zeng, Xie-Xuan Zhou, Wen-Jing Zhou, Hao Chi, Jian-feng Zhan, Si-Min He.
@@ -58,4 +66,3 @@ Anal. Chem. 2017, 89, 23, 12690-12697
 pDeep: Predicting MS/MS Spectra of Peptides with Deep Learning.
 ```
 DOI: https://doi.org/10.1021/acs.analchem.7b02566
-
