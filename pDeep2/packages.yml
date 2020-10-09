@@ -6,3 +6,5 @@ channels:
   - defaults
 dependencies:
   - tensorflow = 1.15.0
+  - matplotlib
+  - pandas
